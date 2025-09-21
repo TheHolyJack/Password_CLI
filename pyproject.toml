@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "password-checker"
+version = "0.1"
+dependencies = ["requests"]
+
+[project.scripts]
+password-checker = "password_checker.cli:main"
